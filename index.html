@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header>
+        <div class="top-bar">
+          <img src="./images/logo.svg" class="logo" alt="" />
+          <button
+            type="button"
+            id="menu-toggle"
+            aria-label="Navigation Toggle"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <img src="./images/icon-menu.svg" class="hamburger" alt="" />
+          </button>
+          <div class="nav-container">
+            <nav>
+              <ul class="navigation">
+                <li>
+                  <button
+                    type="button"
+                    class="dropdown-link"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Features
+                    <span id="arrow"
+                      ><svg
+                        width="10"
+                        height="6"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          fill="none"
+                          d="m1 1 4 4 4-4"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul class="dropdown features">
+                    <li>
+                      <a href="#" class="icon-link"
+                        ><span
+                          ><img
+                            src="./images/icon-todo.svg"
+                            class="icon"
+                            alt=""
+                          /> </span
+                        >Todo List</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="icon-link"
+                        ><span
+                          ><img
+                            src="./images/icon-calendar.svg"
+                            class="icon"
+                            alt=""
+                          /> </span
+                        >Calendar</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="icon-link"
+                        ><span
+                          ><img
+                            src="./images/icon-reminders.svg"
+                            class="icon"
+                            alt=""
+                          /> </span
+                        >Reminders</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="icon-link"
+                        ><span
+                          ><img
+                            src="./images/icon-planning.svg"
+                            class="icon"
+                            alt=""
+                          /> </span
+                        >Planning</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="dropdown-link"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Company
+                    <span id="arrow"
+                      ><svg
+                        width="10"
+                        height="6"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          fill="none"
+                          d="m1 1 4 4 4-4"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul class="dropdown company">
+                    <li><a href="#" class="nav-link">History</a></li>
+                    <li><a href="#" class="nav-link">Our Team</a></li>
+                    <li><a href="#" class="nav-link">Blog</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="nav-link">Careers</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+              </ul>
+            </nav>
+            <nav>
+              <ul class="members">
+                <li><a href="#" class="members-link">Login</a></li>
+                <li><a href="#" class="secondary-btn">Register</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="overlay"></div>
+      <main>
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1>Make <span>remote work</span></h1>
+              <p>
+                Get your team in sync, no matter your location. Streamline
+                processes, create team rituals, and watch productivity soar.
+              </p>
+              <a href="#" class="primary-btn" aria-label="Learn More about Snap"
+                >Learn more</a
+              >
+            </div>
+            <div class="hero-marketing">
+              <img
+                src="./images/client-databiz.svg"
+                class="marketing-logo"
+                alt="Databiz - a satisfied partner of Snap"
+              />
+              <img
+                src="./images/client-audiophile.svg"
+                class="marketing-logo"
+                atl="Audiophile - a satisfied partner of Snap"
+              />
+              <img
+                src="./images/client-meet.svg"
+                class="marketing-logo"
+                alt="Meet - a satisfied partner of Snap"
+              />
+              <img
+                src="./images/client-maker.svg"
+                class="marketing-logo"
+                alt="Maker - a satisfied partner of Snap"
+              />
+            </div>
+          </div>
+          <div class="hero-img-wrapper">
+            <picture>
+              <source
+                srcset="./images/image-hero-mobile.png"
+                media="(max-width: 1024px)"
+              />
+              <img
+                src="./images/image-hero-desktop.png"
+                class="hero-img"
+                alt=""
+              />
+            </picture>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./navigation.js"></script>
+  </body>
+</html>
